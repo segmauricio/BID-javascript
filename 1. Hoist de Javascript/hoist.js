@@ -6,7 +6,7 @@ var hello;
 console.log(hello) logs undefined
 hello = 'world'
 */
-
+console.log("------------------------------------------------------------------------------------------------")
 //2-
 var needle = 'haystack';
 test();
@@ -21,7 +21,7 @@ function test() is defined;
 var needle = "magnet";
 console.log(needle) logs "magnet";
 */
-
+console.log("------------------------------------------------------------------------------------------------")
 //3-
 var brendan = 'super cool';
 function print(){
@@ -37,7 +37,7 @@ brendan = "only okay;
 console.log(brendan) logs "only okay"
 console.log(brendan) outside the print() function logs "supercool" since the function wasn't called;
 */
-
+console.log("------------------------------------------------------------------------------------------------")
 //4-
 var food = 'chicken';
 console.log(food);
@@ -57,7 +57,7 @@ console.log(food) logs "half-chicken";
 food = "gone" but this change isn't logged anywhere so it isn't displayed;
 the function eat() is called;
 */
-
+console.log("------------------------------------------------------------------------------------------------")
 //5-
 /*mean();
 console.log(food);
@@ -71,7 +71,7 @@ console.log(food);*/
 /*
 Se obtiene un error porque la variable 'mean' se elevo a la cima y se trato de invocarla antes de asignarle una funcion
 */
-
+console.log("------------------------------------------------------------------------------------------------")
 //6-
 console.log(genre);
 var genre = "disco";
@@ -95,7 +95,7 @@ console.log(genre) logs "r&b";
 the function rewind() is called;
 console.log(genre) logs "disco" cause the function rewind() didn't return the change of the variable;
 */
-
+console.log("------------------------------------------------------------------------------------------------")
 //7-
 dojo = "san jose";
 console.log(dojo);
@@ -119,7 +119,7 @@ console.log(dojo) logs "burbanks";
 the function learn is called;
 console.log(dojo) logs "san jose" cause the function learn() didn't return the change of the variable;
 */
-
+console.log("------------------------------------------------------------------------------------------------")
 //8-
 console.log(makeDojo("Chicago", 65));
 console.log(makeDojo("Berkeley", 0));
