@@ -5,7 +5,7 @@ const [ ,otherRandomCar ] = cars
 //Predict the output
 console.log(randomCar)                          //console.log(randomCar) logs "Tesla";
 console.log(otherRandomCar)                     //console.log(otherRandomCar) skips the first property and logs "Mercedes";
-
+console.log("------------------------------------------------------------------------------------------------")
 //2-
 const employee = {                              //const [name, age, company] = employee;
     name: 'Elon',
@@ -16,7 +16,7 @@ const { name: otherName } = employee;           //el valor de 'name' fue redirig
 //Predict the output
 //console.log(name);                            //Causa un error de referencia ya que 'name' no esta mas definido en el objeto
 console.log(otherName);
-
+console.log("------------------------------------------------------------------------------------------------")
 //3-
 const person = {                                //const [name, age, height] = person;
     name: 'Phil Smith',
@@ -30,8 +30,9 @@ Los dos puntos :después del nombre de la propiedad seguido de su nueva variable
 enhashedPassword, eliminando así el conflicto de identificador mencionado anteriormente.*/
 //Predict the output
 console.log(password);                          //it logs"12345"
-//console.log(hashedPassword);                  //it logs "undefined", why? idk
-
+console.log(hashedPassword);                    //it logs "undefined" because the object person doesnt have a property 'password'
+                                                //the var is created either way but since it isnt defined in the object it doesnt have any value
+console.log("------------------------------------------------------------------------------------------------")
 //4-
 const numbers = [8, 2, 3, 5, 6, 1, 67, 12, 2];  //const[x, first, x, second, x, x, x, x, third]
 const [,first] = numbers;                       //the property in the position 1 is "first"
@@ -41,8 +42,7 @@ const [,,,,,,,,third] = numbers;                //the property in the position 8
 console.log(first == second);                   //the (==) operator checks whether 2 operands are equals, returning a boolean result
                                                 //in this case, first (2) isn't equal to second (5) so it returns FALSE
 console.log(first == third);                    //however, first(2) is equal to third(2) therefore it returns TRUE
-
-
+console.log("------------------------------------------------------------------------------------------------")
 //5-
 const lastTest = {                              //const lastTest[key, secondKey[0, 1, 2, 3, 4, 5]]
     key: 'value',
