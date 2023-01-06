@@ -13,7 +13,7 @@ class Ninja{
     }
     drinkSake(){
         this.health += 10;
-        console.log(`- The stats of the ninja are the following: Name [${this.name}], Strenght [${this.strength}], Speed [${this.speed}] and Health [${this.health}]`)
+        this.showStats();
     }
 }
 
